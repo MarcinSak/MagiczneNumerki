@@ -11,11 +11,10 @@ public class PickFile
 	File file;
 	
 	public File pickFile() throws FileNotFoundException{
+		fileChooser.setDialogTitle("Pick a file");
 		if(fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION){
 			file = fileChooser.getSelectedFile();
 		}
 		return file;
 	}
-	
-	
 }
